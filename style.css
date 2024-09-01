@@ -1,0 +1,831 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato/Lato-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 1600px;
+    height: 75px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    gap: 859px
+}
+
+.left {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    margin-left: 231px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.banner {
+    width: 1600px;
+    height: 764px;
+    background-color: #F1E4E6;
+    display: flex;
+    gap: 63px;
+}
+
+.right_menu {
+    width: 232px;
+    height: 634px;
+    background: #FFFFFF;
+    padding-left: 33px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.right_menu:hover {
+    display: flex;
+}
+
+.right_menu__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_menu__heading {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.right_menu__title {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #F16D7F;
+}
+
+.right_menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 12px;
+}
+
+.right_menu__link {
+    margin-left: 22px;
+}
+
+.right_menu__link {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #6F6E6E;
+}
+
+.right_menu__link:hover {
+    color: #F16D7F;
+}
+
+#bag {
+    position: relative;
+}
+
+#bag::after {
+    width: 19px;
+    height: 19px;
+    border-radius: 10px;
+    content: "5";
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: center;
+    color: #fff;
+    background-color: #F16D7F;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    width: 405px;
+    height: 93.1px;
+    display: flex;
+    gap: 16px;
+    margin-top: 290px;
+}
+
+.brand {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.6px;
+    text-align: left;
+}
+
+.of {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo_name {
+    width: 377px;
+    height: 93px;
+}
+
+.pink {
+    color: #F16D7F;
+}
+
+.carrot {
+    border-left: 12px solid #F16D7F;
+    ;
+}
+
+.for {
+    width: 360px;
+    height: 260px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.women {
+    background-image: url(./img/women.png);
+}
+
+.men {
+    background-image: url(./img/men2.png);
+}
+
+.kids {
+    background-image: url(./img/kid.png);
+}
+
+.for_long {
+    width: 1140px;
+    height: 180px;
+    background-image: url(./img/any.png);
+    background-position: center;
+    background-size: cover;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.catalog {
+    max-height: 470px;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.catalog p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.catalog h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.sales {
+    margin-top: 96px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.sales h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.items {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+
+.capsule {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    color: #000000;
+    ;
+}
+
+.known {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.8px;
+    text-align: left;
+    color: #5D5D5D;
+}
+
+.cash {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #F16D7F;
+}
+
+.shop {
+    width: 360px;
+    height: 587px;
+    background: #F8F8F8;
+}
+
+.imaga {
+    position: relative;
+}
+
+.imaga-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+    display: none;
+}
+
+.imaga:hover .imaga-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add {
+    width: 139px;
+    height: 44px;
+    gap: 0px;
+    border: 1px;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    background-color: #000;
+}
+
+.add img {
+    width: 26px;
+    height: 23.97px;
+    margin-left: 15px;
+}
+
+.bag_plus {
+    width: 72px;
+    height: 17px;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.8px;
+    margin-right: 15px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.bill {
+    padding: 24px 16px 24px 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.market {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.browse {
+    width: 212px;
+    height: 48px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #F26376;
+    background-color: #fff;
+    border: 1px solid #FF6A6A;
+}
+
+.forthree {
+    width: 1600px;
+    height: 341px;
+    background: #222222;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.atos {
+    width: 360px;
+    height: 134px;
+    color: #FBFBFB;
+    font-family: 'Lato';
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 23.95px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.atos p {
+    font-size: 13.97px;
+    line-height: 16.77px;
+    font-weight: 300;
+    height: 17px;
+}
+
+.serfer {
+    width: 1600px;
+    height: 448px;
+    background-image: url(./img/serfer.png);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.reception {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manager {
+    width: 359.45px;
+    height: 225px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manager img {
+    width: 96px;
+    height: 96px;
+}
+
+.manager p {
+    width: 359.45px;
+    height: 99px;
+    font-family: 'Lato italics';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.subscribe {
+    font-family: 'Lato';
+    width: 557px;
+    height: 61px;
+    text-align: center;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40.13px;
+}
+
+.subscribe h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.1px;
+}
+
+.enter_mail {
+    width: 356px;
+    height: 49px;
+    display: flex;
+}
+
+.enter_mail input {
+    width: 256px;
+    height: 49px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    background: #E1E1E1;
+    border-radius: 23px 0px 0px 23px;
+    border: 0;
+}
+
+.enter_mail button {
+    width: 100px;
+    height: 49px;
+    background: #F16D7F;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    border-radius: 0 23px 23px 0;
+    border: 0;
+}
+
+footer {
+    width: 1600px;
+    height: 79px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #222224;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialism {
+    width: 147.66px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialism button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+}
+
+button:hover {
+    background-color: #F16D7F;
+    color: #fff;
+    fill: #F16D7F;
+}
+
+button:hover path {
+    fill: #fff;
+}
+
+@media (max-width:769px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 736px;
+    }
+    nav {
+        width: 768px;
+        height: 74px;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .left {
+        margin-left: 32px;
+    }
+    .right {
+        margin-right: 32px;
+    }
+    .banner {
+        width: 768px;
+        height: 365px;
+        background-color: #F1E4E6;
+        display: flex;
+        gap: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .banner img {
+        width: 385px;
+        height: 365px;
+    }
+    .name {
+        max-width: 311px;
+        max-height: 92px;
+        margin-right: 33px;
+        gap: 16px;
+        margin-top: 0px;
+    }
+    .name_of {
+        display: none;
+    }
+    .name_on {
+        display: flex;
+    }
+    .right_menu {
+        position: relative;
+        top: 135px;
+        left: -29px;
+    }
+    .brand {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .of {
+        font-size: 15px;
+        line-height: 28.8px;
+    }
+    .logo_name {
+        max-width: 283px;
+        max-height: 78px;
+    }
+    .catalog {
+        max-height: 303px;
+        gap: 19px;
+    }
+    .for {
+        width: 232px;
+        height: 167px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .for_long {
+        width: 735px;
+        height: 116px;
+    }
+    .sales {
+        margin-top: 109px;
+        margin-bottom: 70px;
+    }
+    .sales h2 {
+        margin-bottom: 3px;
+    }
+    .items {
+        margin-bottom: 72px;
+    }
+    .forthree {
+        Width: 768px;
+        Height: 610px;
+        gap: 48px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .serfer {
+        width: 768px;
+        height: 693px;
+    }
+    .reception {
+        gap: 48px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .manager {
+        margin-top: 64px;
+    }
+    footer {
+        width: 768px;
+        height: 79px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 343px;
+    }
+    #bag,
+    #user {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        gap: 0
+    }
+    .left {
+        margin-left: 16px;
+    }
+    .right {
+        margin-right: 16px;
+    }
+    .banner img {
+        display: none;
+    }
+    .banner {
+        width: 100%;
+        height: 363px;
+        justify-content: center;
+        align-items: center;
+    }
+    .name {
+        width: 263px;
+        height: 66px;
+        display: flex;
+        gap: 15px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .name_of {
+        display: none;
+    }
+    .name_on {
+        display: flex;
+    }
+    .brand {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45.6px;
+    }
+    .of {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .logo_name {
+        width: 377px;
+        height: 93px;
+    }
+    .pink {
+        color: #F16D7F;
+    }
+    .carrot {
+        border-left: 12px solid #F16D7F;
+        ;
+    }
+    /*  */
+    .for {
+        width: 343px;
+        height: 247px;
+    }
+    .catalog {
+        max-height: 948px;
+        margin-top: 64px;
+        gap: 32px;
+    }
+    .catalog p {
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .catalog h3 {
+        font-family: 'Lato';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: center;
+        color: #F16D7F;
+    }
+    .sales {
+        margin-top: 64px;
+        margin-bottom: 85px;
+    }
+    .items {
+        margin-bottom: 64px;
+    }
+    .shop {
+        width: 359px;
+        height: 580px;
+    }
+    .market {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .browse {
+        margin-top: 40px;
+    }
+    .forthree {
+        width: 375px;
+        height: 610px;
+    }
+    .atos {
+        width: 347.82px;
+        height: 129.47px;
+    }
+    .serfer {
+        width: 375px;
+        height: 550px;
+    }
+    .subscribe {
+        width: 341px;
+    }
+    footer {
+        width: 375px;
+        height: 143px;
+    }
+    footer p {
+        margin-bottom: 9px;
+    }
+    .footer_menu {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
